@@ -16,42 +16,48 @@ Make a case for why your shoes have <em>got</em> to go and you may be one of ten
 </p>
 
 <form action="http://learningwebdesign.com/contest.php" method="post">
-<p>Contest Entry Information</p>
+<fieldset>
+<legend>Contest Entry Information</legend>
 <ul>
-<li>Name: <input type="text" name="username"></li>
-<li>Email Address: <input type="email" name="emailaddress"></li>
-<li>State: <input type="tel" name="telephone"></li>
-<li>My shoes are SO old…<br>
+<li><label for="form-name">Name:</label> <input type="text" name="username" id="form-name"></li>
+<li><label for="form-email">Email Address:</label> <input type="email" name="emailaddress" id="form-email"></li>
+<li><label for="form-tel">State:</label> <input type="tel" name="telephone" id="form-tel"></li>
+<li><label for="form-story">My shoes are SO old…<br></label>
 <textarea name="story" rows="4" cols="60"
-maxlength="300" placeholder="No more than 300
+maxlength="300" id="form-story" placeholder="No more than 300
 characters long"></textarea></li>
 </ul>
+</fieldset>
+
 <p><input type="submit" value="Pimp my shoes!">
 <input type="reset"></p>
 </form>
 
 <h2>Design your custom Forcefields:</h2>
-
-<p>Custom Shoe Design</p>
-<p>Color <em>(choose one)</em>:</p>  
-
-<ul>  
-<li><input type="radio" name="color" value="red">Red</li>  
-<li><input type="radio" name="color" value="blue">Blue</li>  
-<li><input type="radio" name="color" value="black">Black</li>  
-<li><input type="radio" name="color" value="silver">Silver</li>  
-</ul>
-
-<p>Features <em>(Choose as many as you want)</em></p>  
+<fieldset>
+<legend>Custom Shoe Design</legend>
+<fieldset>
+<legend>Color <em>(choose one)</em>:</legend>  
 
 <ul>  
-<li><input type="checkbox" name="features[]" value="sparkley laces">Sparkley laces</li>  
-<li><input type="checkbox" name="features[]" value="metallic logo" checked="checked">Metallic logo</li>  
-<li><input type="checkbox" name="features[]" value="light-up heels">Light-up heels</li>  
-<li><input type="checkbox" name="features[]" value="mp3-enabled">MP3-enabled</li>  
+<li><label><input type="radio" name="color" value="red">Red</label></li>  
+<li><label><input type="radio" name="color" value="blue">Blue</label></li>  
+<li><label><input type="radio" name="color" value="black">Black</label></li>  
+<li><label><input type="radio" name="color" value="silver">Silver</label></li>  
 </ul>
+</fieldset>
+<fieldset>
+<legend>Features <em>(Choose as many as you want)</em></legend>  
 
-<p>Size</p>
+<ul>  
+<li><label><input type="checkbox" name="features[]" value="sparkley laces">Sparkley laces</label></li>  
+<li><label><input type="checkbox" name="features[]" value="metallic logo" checked="checked">Metallic logo</label></li>  
+<li><label><input type="checkbox" name="features[]" value="light-up heels">Light-up heels</label></li>  
+<li><label><input type="checkbox" name="features[]" value="mp3-enabled">MP3-enabled</label></li>  
+</ul>
+</fieldset>
+<fieldset>
+<legend>Size</legend>
 <p>Sizes reflect standard men's sizes:
 <select name="size" size="1">
 <option>5</option>
@@ -65,5 +71,7 @@ characters long"></textarea></li>
 <option>13</option>
 </select>
 </p>
+</fieldset>
+</fieldset>
 </body>
 </html>
